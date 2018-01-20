@@ -18,28 +18,33 @@ $ npm install css-to-flow
 ```js
 const cssToFlow = require('css-to-flow')
 
-cssToFlow('unicorns')
-//=> 'unicorns & rainbows'
+const css = `
+.a { color: red; }
+.b:hover, .c::before {
+  color: white;
+}
+.testClass, #id {color: black;}
+`
+
+cssToFlow(css)
+// => @flow
+// => declare export default {|
+// =>   +'a': string,
+// =>   +'b': string,
+// =>   +'c': string,
+// =>   +'testClass': string,
+// => |}
 ```
 
 ## API
 
-### `cssToFlow(input, [options])`
+### `cssToFlow(css)`
 
-#### input
+#### css
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
+css source.
 
 ## Contributors
 
