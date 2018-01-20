@@ -37,7 +37,7 @@
     "css-to-flow"
   ],
   "dependencies": {
-    "find-css-classes": "^0.1.0"
+    "find-css-classes": "^0.2.0"
   },
   "devDependencies": {
     "all-contributors-cli": "^4.10.1",
