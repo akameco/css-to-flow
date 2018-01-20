@@ -1,0 +1,52 @@
+{
+  "name": "css-to-flow",
+  "version": "0.0.0",
+  "description": "create flow from css",
+  "license": "MIT",
+  "repository": "akameco/css-to-flow",
+  "author": "akameco <akameco.t@gmail.com> (akameco.github.io)",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "add-contributor": "all-contributors add",
+    "precommit": "lint-staged",
+    "fmt": "prettier --write '**/*.{js,json,md}'",
+    "flow": "flow",
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage --ci --runInBand",
+    "test:ci": "yarn lint && yarn flow && yarn test:cov"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "fmt",
+      "git add"
+    ]
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "css",
+    "scss",
+    "postcss",
+    "flow",
+    "flowtype",
+    "css-to-flow"
+  ],
+  "dependencies": {
+    "find-css-classes": "^0.1.0"
+  },
+  "devDependencies": {
+    "all-contributors-cli": "^4.10.1",
+    "eslint": "^4.16.0",
+    "eslint-config-precure": "^2.0.0",
+    "flow-bin": "^0.63.1",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.0.1",
+    "prettier": "^1.10.2"
+  }
+}
