@@ -1,6 +1,6 @@
 {
   "name": "css-to-flow",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "create flow from css",
   "license": "MIT",
   "repository": "akameco/css-to-flow",
