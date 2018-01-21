@@ -27,13 +27,15 @@ const css = `
 `
 
 cssToFlow(css)
-// => @flow
-// => declare export default {|
-// =>   +'a': string,
-// =>   +'b': string,
-// =>   +'c': string,
-// =>   +'testClass': string,
-// => |}
+/*
+@flow
+declare export default {|
+  +'a': string,
+  +'b': string,
+  +'c': string,
+  +'testClass': string,
+|}
+*/
 ```
 
 ## API
