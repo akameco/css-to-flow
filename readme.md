@@ -28,7 +28,7 @@ const css = `
 
 cssToFlow(css)
 /*
-@flow
+// @flow
 declare export default {|
   +'a': string,
   +'b': string,
