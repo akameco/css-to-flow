@@ -1246,9 +1246,9 @@ fill-range@^2.1.0:
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
 
-find-css-classes@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/find-css-classes/-/find-css-classes-0.2.0.tgz#0f13d5670bc81f00a97cb340a2d2004b648b2754"
+find-css-classes@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/find-css-classes/-/find-css-classes-0.2.1.tgz#855d51377fb5d25cecb048e2820c154997be7a76"
   dependencies:
     postcss-scss "^1.0.3"
     postcss-selector-parser "^3.1.1"
