@@ -7,7 +7,7 @@ module.exports = (input /*: string */) /*: string */ => {
     throw new TypeError(`Expected a string, got ${typeof input}`)
   }
 
-  const types = Array.from(findClasses(input))
+  const types = [...findClasses(input)]
     .map(key => `  +'${key}': string,`)
     .join('\n')
   const result = `
